@@ -1,0 +1,51 @@
+﻿body {
+    height: 100%;
+}
+#testimonials {
+    background-color: var(--light-grey);
+}
+
+.test-item {
+    border: 2px solid var(--light-grey);
+    padding: 2rem 1rem;
+    position: relative;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    margin: 2rem 0 14rem 0;
+}
+
+    .test-item::after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #fff;
+    }
+
+.test-item-info {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+    .test-item-info img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        margin: 1rem;
+    }
+
+    .test-item-info h3 {
+        font-size: 1rem;
+    }

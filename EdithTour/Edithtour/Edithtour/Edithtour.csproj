@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94AC2EE8-3580-4340-9D65-882B5BC7EB63}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Edithtour</RootNamespace>
+    <AssemblyName>Edithtour</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Css\Home.css" />
+    <Content Include="Content\Css\Tour.css" />
+    <Content Include="Content\Images\Home\Edith.png" />
+    <Content Include="Content\Images\Home\imgcancel.jpg" />
+    <Content Include="Content\Images\Home\introduction.jpg" />
+    <Content Include="Content\Images\Home\korea.jpg" />
+    <Content Include="Content\Images\Home\Location\China.jpg" />
+    <Content Include="Content\Images\Home\Location\korea.jpg" />
+    <Content Include="Content\Images\Home\Location\VietNam.jpg" />
+    <Content Include="Content\Images\Home\logo.png" />
+    <Content Include="Content\Images\Home\rules.jpg" />
+    <Content Include="Content\Images\Home\Slider\france.png" />
+    <Content Include="Content\Images\Home\Slider\hanoi.png" />
+    <Content Include="Content\Images\Home\Slider\italy.png" />
+    <Content Include="Content\Images\Home\Slider\japan.png" />
+    <Content Include="Content\Images\Home\Slider\thailand.png" />
+    <Content Include="Content\Images\Home\thumnaildiscount.png" />
+    <Content Include="Content\Images\Home\thumnailtet.png" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Chùa Linh Phước.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Chợ Đà Lạt.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Hầm Rượu Mộng Mơ Tửu.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Hồ Tuyền Lâm.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Mê cung Tình yêu.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Nhà thờ Domain De Marie.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Núi Langbiang.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Thung Lũng Tình Yêu.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Thung Lũng Vàng.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Thác Datanla.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Vườn dâu tươi.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Vạn Lý Trường Thành.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Đồi vọng cảnh.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà nẵng\bana.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà nẵng\CHỢ HÀN.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà nẵng\CÙ LAO CHÀM.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà nẵng\hoian.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà nẵng\LĂNG KHẢI ĐỊNH.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà nẵng\SƠN TRÀ.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà nẵng\THIÊN MỤ chùa.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà nẵng\ĐẠI NỘI.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Biển bình hưng.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Bãi cây me.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Bãi Tranh-Hòn Miễu.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Bè Tôm hùm - đặc sản đảo.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Hải sản - buffet hải sản nướng tại bàn.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\KDL Con Sẻ Tre.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Nhà Hát Đó.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Vinpearl Nha Trang.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Viện Hải dương học.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Vườn Nho Ninh Thuận.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Vịnh Nha Trang.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\bãi sao.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Chèo thuyền Kayak.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Chùa Hộ Quốc.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\chợ đêm Bạch Đằng.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\cáp treo Hòn Thơm.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Câu cá lặn ngắm san hô.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Công viên nước Hòn Thơm Phú Quốc %28Aquatopia Water Park%29.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Cơ sở hải sản khô.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Cơ sở sản xuất rượu Sim Phú Quốc.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\cảng Dinh Cậu.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Grand World Phú Quốc.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Khu du lịch Suối Tranh.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Làng Chài Rạch Vẹm.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Mũi Gành Dầu.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Nhà tù Phú Quốc.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Nước mắm Phú Quốc.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Rừng Nguyên Sinh Phú Quốc.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Trang trại Ong mật Phú Quốc.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Trại nuôi cấy Ngọc Trai.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Vinpearl Safari.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Vườn Tiêu Phú Quốc.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Đông Nam đảo Phú Quốc.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\bản làng Cát Cát - Sin Chải.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\Bảo tàng Hồ Chí Minh.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\Chùa Bái Đính.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\chùa Một Cột.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\chùa Trấn Quốc.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\cầu Bãi Cháy.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\Hạ Long.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\Khu Du lịch Fansipan.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\Lăng Chủ Tịch Hồ Chí Minh,.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\Phật Yên Tử.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\Vịnh Hạ Long.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\Động Thiên Cung.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\poster\Edith Tour.png" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\poster\EdithTourBien.png" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\poster\letgo.png" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\poster\test-1.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\poster\test-2.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\poster\test-3.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\poster\xeEdith Tour.png" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Quảng Bình\biển đá nhảy.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Quảng Bình\mộ đại tướng Võ Nguyên Giáp.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Quảng Bình\Sông Chày - Hang Tối.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Quảng Bình\Vũng Chùa.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Quảng Bình\Động Phong Nha.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Quảng Bình\Động thiên đường.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Vũng Tàu\Bò Sữa Long Thành trạm.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Vũng Tàu\Bạch Dinh%28Tượng Chúa Kitô%29.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Vũng Tàu\dạo phố đêm Vũng Tàu.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Vũng Tàu\KDL Bình Châu suối nướcnong.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Vũng Tàu\KDL Văn Thánh.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Vũng Tàu\Long Hải.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Vũng Tàu\Đảo Long Sơn.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\buffet với cua Tuyết.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\Chidori Gafuchi.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\chùa Asasuka.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\chùa nghìn cột Fushimi Inari.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\chùa vàng kinkakuji.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\công viên nara.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\heritage-5430081_640.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\khu trượt tuyết Fuji Ten Resort.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\landscape.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\Làng cổ Oshino Hakkai.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\lâu đài osaka.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\lễ hội hoa anh đào ở công viên Ueno.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\tháp tokyo Skytree.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\trung tâm mua sắm shinsai bashi.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\trà đạo truyền thống.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\TTTM Aeon Mall Narita.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\tàu shinkanshen.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\tắm onsen truyền thống.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Hà Nội - Malaysia\Borneo Kellybays.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Hà Nội - Malaysia\Cung Điện Hoàng Gia %28Cung điện Alam Shah%29.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Hà Nội - Malaysia\Jalan Bukit Bintang.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Hà Nội - Malaysia\khu China Town.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Hà Nội - Malaysia\Nhà nghị viện.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Hà Nội - Malaysia\Quảng trường Độc lập Merdeka.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Hà Nội - Malaysia\Suria Sabah.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Hà Nội - Malaysia\tháp đôi Petronas %28Twin tower%29.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\Hà Nội - Malaysia\thủ đô Kuala Lumpur.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - INDONESIA\BBQ Hải sản trên bãi biển Jimbaran.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - INDONESIA\Cổng trời Handara.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - INDONESIA\download.jpg ngôi làng của các nghệ nhân Ubud.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - INDONESIA\hồ Batur.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - INDONESIA\ngôi làng của các nghệ nhân Celuk.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - INDONESIA\ngôi làng của các nghệ nhân Mas.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - INDONESIA\núi lửa Batur.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - INDONESIA\ruộng bậc thang Tegalalang.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - INDONESIA\Swing – trải nghiệm trò đánh đu thiên đường.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - INDONESIA\Đền Tanah Lot.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - INDONESIA\Đền Ulun Danu.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - Úc\Chợ Nữ hoàng Victoria.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - Úc\cầu Sydney Habour Bridge.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - Úc\Ghế đá của bà Macquarie %28Mrs. Macquaries Chair%29.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - Úc\Nhà ga Flinders.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - Úc\Nhà hát Con Sò.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - Úc\Nhà thờ St. Mary.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - Úc\Nhà thờ St. Patrick.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - Úc\Sydney Wildlife Zoo.jpg" />
+    <Content Include="Content\Images\Home\Tour\OUTSIDE\TPHCM - Úc\tuyết mùa hè tại Mt.Buller.jpg" />
+    <Content Include="Content\Images\Home\vietnamtrending.jpg" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Home\Cancel.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Introduction.cshtml" />
+    <Content Include="Views\Home\Policy.cshtml" />
+    <Content Include="Views\Home\Rules.cshtml" />
+    <Content Include="Views\Shared\_LayoutPage1.cshtml" />
+    <Content Include="Views\Tour\Tour.cshtml" />
+    <Content Include="Views\Home\Tour.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59927</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59927/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
