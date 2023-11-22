@@ -164,6 +164,8 @@
     <Content Include="Content\Images\Home\thumnailtet.png" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Chùa Linh Phước.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Chợ Đà Lạt.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\coffee.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\dalat.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Hầm Rượu Mộng Mơ Tửu.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Hồ Tuyền Lâm.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Mê cung Tình yêu.jpg" />
@@ -176,8 +178,11 @@
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Vạn Lý Trường Thành.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Đồi vọng cảnh.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà nẵng\bana.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà nẵng\beach-da-nang.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà nẵng\CHỢ HÀN.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà nẵng\CÙ LAO CHÀM.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\da-lat.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà nẵng\danang.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà nẵng\hoian.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà nẵng\LĂNG KHẢI ĐỊNH.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà nẵng\SƠN TRÀ.jpg" />
@@ -189,6 +194,8 @@
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Bè Tôm hùm - đặc sản đảo.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Hải sản - buffet hải sản nướng tại bàn.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\KDL Con Sẻ Tre.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\nhatrang.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\nhatranggia.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Nhà Hát Đó.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Vinpearl Nha Trang.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Viện Hải dương học.jpg" />
@@ -205,11 +212,13 @@
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Cơ sở sản xuất rượu Sim Phú Quốc.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\cảng Dinh Cậu.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Grand World Phú Quốc.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\hon-thom.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Khu du lịch Suối Tranh.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Làng Chài Rạch Vẹm.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Mũi Gành Dầu.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Nhà tù Phú Quốc.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Nước mắm Phú Quốc.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\phu-quoc-island.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Rừng Nguyên Sinh Phú Quốc.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Trang trại Ong mật Phú Quốc.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Phú Quốc\Trại nuôi cấy Ngọc Trai.jpg" />
@@ -222,12 +231,15 @@
     <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\chùa Một Cột.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\chùa Trấn Quốc.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\cầu Bãi Cháy.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\hanoi.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\hoguom.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\Hạ Long.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\Khu Du lịch Fansipan.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\Lăng Chủ Tịch Hồ Chí Minh,.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\Phật Yên Tử.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\Vịnh Hạ Long.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\CầnThơ-HàNội\Động Thiên Cung.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\dalat.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\poster\Edith Tour.png" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\poster\EdithTourBien.png" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\poster\letgo.png" />
@@ -237,6 +249,7 @@
     <Content Include="Content\Images\Home\Tour\INTSIDE\poster\xeEdith Tour.png" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Quảng Bình\biển đá nhảy.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Quảng Bình\mộ đại tướng Võ Nguyên Giáp.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Quảng Bình\quangbinh.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Quảng Bình\Sông Chày - Hang Tối.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Quảng Bình\Vũng Chùa.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Quảng Bình\Động Phong Nha.jpg" />
@@ -247,6 +260,8 @@
     <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Vũng Tàu\KDL Bình Châu suối nướcnong.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Vũng Tàu\KDL Văn Thánh.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Vũng Tàu\Long Hải.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Vũng Tàu\tuong.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Vũng Tàu\vungtau.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Sài Gòn - Vũng Tàu\Đảo Long Sơn.jpg" />
     <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\buffet với cua Tuyết.jpg" />
     <Content Include="Content\Images\Home\Tour\OUTSIDE\Cần Thơ - Nhật bản\Chidori Gafuchi.jpg" />
