@@ -1,0 +1,207 @@
+﻿
+@{
+    ViewBag.Title = "endow";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+    <link href="/assets/plugins/jquery-ui/jquery-ui.css" rel="stylesheet">
+    <link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/vendors/bootstrap/dist/css/bootstrap-social.css" rel="stylesheet">
+    <link href="/assets/vendors/select2/dist/css/select2.css" rel="stylesheet">
+
+    <link href="/assets/slick/slick.css" rel="stylesheet">
+    <link href="/assets/slick/slick-theme.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/assets/plugins/rs-plugin/css/settings.css"
+          media="screen">
+    <link rel="stylesheet" type="text/css" href="/assets/plugins/selectbox/select_option1.css">
+    <link rel="stylesheet" type="text/css" href="/assets/plugins/datepicker/datepicker.css">
+    <link rel="stylesheet" type="text/css" href="/assets/plugins/isotope/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="/assets/plugins/isotope/isotope.css">
+    }
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=vietnamese"
+          }
+    <div id="contentSearchboxlayout" class="contentSearchboxlayout hidden-cls">
+        <form id="searchFormKiritmLayout" method="get" role="form"
+              action="/tim-kiem-tour">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="serch-box-layout-input">
+                        <input onkeypress="return checkSubmitSearchLayout(event)"
+                               type="text" name="search"
+                               class="input-search-kiritm"
+                               id="inputSearchLayout"
+                               autocomplete="off"
+                               placeholder="Tìm kiếm..."
+                               aria-describedby="basic-addon2">
+                        <i class="fa fa-search fa-kiritm" id="basic-addon2"
+                           onclick="javascript:$(this).parents('form').submit()"></i>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="input-group date filterDate ed-datepicker">
+                        <input type="text" class="form-control " name="from"
+                               autocomplete="off"
+                               id="fromDateSearchBoxLayout"
+                               placeholder="Từ ngày (DD/MM/YYYY)"
+                               value="">
+                        <div class="input-group-addon">
+                            <span class="fa fa-calendar"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="input-group date ed-datepicker filterDate">
+                        <input type="text" class="form-control" name="to"
+                               id="toDateSearchBoxLayout"
+                               autocomplete="off"
+                               placeholder="Đến ngày (DD/MM/YYYY)"
+                               value="">
+                        <div class="input-group-addon">
+                            <span class="fa fa-calendar"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="mark-close hidden-cls" id="markcloseLayout"></div>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </nav>
+    </div>
+    </header>
+
+    <div class="main-wrapper">
+        <!-- PAGE TITLE -->
+        <section>
+            <div class="pageTitle page-image-tour-tag"
+                 style="background-image:url(/uploads/destination/NuocNgoai/MY/Capitol-building-Washington-DC_478644340.jpg)">
+            </div>
+        </section>
+        <section>
+            <div class="container" style="position: relative">
+                <div class="background-description">
+                    <h1 class="tour-banner-title">Tour ưu đãi khởi hành tại Đà Nẵng</h1>
+                    <div class="sticker">
+                        <p>Ch&ugrave;m tour du lich nước ngo&agrave;i khởi h&agrave;nh tại Đ&agrave; Nẵng</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PAGE CONTENT -->
+        <section class="search-tour-section search-browser-web" id="sessionSearchWebTour">
+            <div class="container">
+                <div class="row">
+                    <!-- Search Form -->
+                    <form id="searchFormKiritmWebTour" method="get" role="form" action="/tim-kiem-tour">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-sm-4 col-xs-12">
+                                    <div class="searchFilterQuery search-box-web-tour">
+                                        <input type="text" class="form-control" name="search"
+                                               onkeyup="return showResultWebTour(event, this.value)"
+                                               onkeypress="return checkSubmitSearchWebTour(event)"
+                                               onkeydown="return onkeyDownSearchWebTour(event)"
+                                               id="inputSearchWebTour"
+                                               autocomplete="off"
+                                               placeholder="Tìm tour : ..."
+                                               value="">
+                                        <div class="input-group-addon">
+                                            <span class="fa fa-search"></span>
+                                        </div>
+                                        <div id="showSuggestionWebTour" class="suggestions hidden-cls">
+                                            <ul id="suggestionSearchWebTour" class="ul-suggestion">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-sm-4 col-xs-12">
+                                            <div id="fromDateSearchBoxWebTour"
+                                                 class="input-group date ed-datepicker filterDate">
+                                                <input type="text" class="form-control" name="from"
+                                                       placeholder="Từ ngày"
+                                                       autocomplete="off"
+                                                       value="">
+                                                <div class="input-group-addon">
+                                                    <span class="fa fa-calendar"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-xs-12">
+                                            <div id="toDateSearchBoxWebTour"
+                                                 class="input-group date ed-datepicker filterDate">
+                                                <input type="text" class="form-control" name="to"
+                                                       autocomplete="off"
+                                                       placeholder="Đến ngày" value="">
+                                                <div class="input-group-addon">
+                                                    <span class="fa fa-calendar"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-xs-12">
+                                            <div class="form-group tour-type">
+                                                <div class="bookingDrop">
+                                                    <select name="type" class="form-control select-drop">
+                                                        <option value="1">Trong nước</option>
+                                                        <option value="2" selected>Ngoài nước</option>
+                                                        <option value="0">Tất cả</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-xs-12">
+                                    <button type="submit" class="btn btn-block buttonCustomPrimary">
+                                        Tìm kiếm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="mark-close hidden-cls" id="markcloseWebTour"></section>
+        <section class="mainContentSection packagesSection list-tour-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9 col-xs-8">
+                        <div class="filter-list-tour">
+                            <div class="filter-text">Sắp xếp :</div>
+                            <div class="filter-tour">
+                                <a class="filter-div  active"
+                                   href="#">
+                                    [ Ngày gần nhất ]
+                                </a>
+                                <a class="filter-div "
+                                   href="/vi/tour/tour-uu-dai-khoi-hanh-tai-da-nang?limit=20&amp;_sort=min-price">
+                                    [ Giá thấp nhất ]
+                                </a>
+                                <a class="filter-div "
+                                   href="/vi/tour/tour-uu-dai-khoi-hanh-tai-da-nang?limit=20&amp;_sort=popular">
+                                    [ Hấp dẫn nhất ]
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-4">
+                        <div class="view-list-tour">
+                            <i onClick="return viewTour('grid')"
+                               class="fa fa-th "
+                               aria-hidden="true"></i>
+                            <span> | </span>
+                            <i onClick="return viewTour('list')"
+                               class="fa fa-th-list active"
+                               aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+

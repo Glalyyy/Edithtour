@@ -122,6 +122,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TourController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -194,6 +195,7 @@
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Bè Tôm hùm - đặc sản đảo.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Hải sản - buffet hải sản nướng tại bàn.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\KDL Con Sẻ Tre.jpg" />
+    <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\nha-trang.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\nhatrang.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\nhatranggia.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ_Nha Trang\Nhà Hát Đó.jpg" />
@@ -347,8 +349,9 @@
     <Content Include="Views\Home\Policy.cshtml" />
     <Content Include="Views\Home\Rules.cshtml" />
     <Content Include="Views\Shared\_LayoutPage1.cshtml" />
-    <Content Include="Views\Tour\Tour.cshtml" />
-    <Content Include="Views\Home\Tour.cshtml" />
+    <Content Include="Views\Tour\TourInSide.cshtml" />
+    <Content Include="Views\Tour\Plane.cshtml" />
+    <Content Include="Views\Home\endow.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

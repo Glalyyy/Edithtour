@@ -33,9 +33,10 @@ namespace EdithTour.Controllers
         {
             return View();
         }
-        public ActionResult Tour()
+        public ActionResult endow()
         {
             return View();
         }
+
     }
 }
