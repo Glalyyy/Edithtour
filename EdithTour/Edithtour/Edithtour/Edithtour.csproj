@@ -45,10 +45,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -126,6 +134,84 @@
     <Compile Include="Controllers\TourController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Admin.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Airline.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Combo.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Contact.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Customer.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Customer_Level.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Data_market.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EdithTourDBContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EdithTourDBContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EdithTourDBContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EdithTourDBContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EdithTourDBContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Hotel.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Locations.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Order.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Orderdetails.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Restaurant.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Room.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Schedule.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Service.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ticket.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ticket_Combo.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Tour.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Tourtrending.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Tour_Inside.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Tour_Outside.cs">
+      <DependentUpon>EdithTourDBContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -343,12 +429,29 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\EdithTourDBContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EdithTourDBContext.Context.cs</LastGenOutput>
+      <DependentUpon>EdithTourDBContext.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\EdithTourDBContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EdithTourDBContext.edmx</DependentUpon>
+      <LastGenOutput>EdithTourDBContext.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="Models\EdithTourDBContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EdithTourDBContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\EdithTourDBContext.edmx.diagram">
+      <DependentUpon>EdithTourDBContext.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -380,10 +483,10 @@
     <Content Include="Views\Tour\Plane.cshtml" />
     <Content Include="Views\Home\endow.cshtml" />
     <Content Include="Views\Hotel\Hotel.cshtml" />
+    <Content Include="Views\Account\Information.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -411,6 +514,9 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

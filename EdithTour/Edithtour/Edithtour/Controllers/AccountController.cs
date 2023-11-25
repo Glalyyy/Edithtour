@@ -21,5 +21,9 @@ namespace EdithTour.Controllers
         {
             return View();
         }
+        public ActionResult Information()
+        {
+            return View();
+        }
     }
 }

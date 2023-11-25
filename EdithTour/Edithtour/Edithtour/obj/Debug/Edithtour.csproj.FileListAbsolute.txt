@@ -77,3 +77,7 @@ D:\ivs_asp.net\EdithTour\Edithtour\Edithtour\obj\Debug\Edithtour.csproj.CoreComp
 D:\ivs_asp.net\EdithTour\Edithtour\Edithtour\obj\Debug\Edithtour.csproj.CopyComplete
 D:\ivs_asp.net\EdithTour\Edithtour\Edithtour\obj\Debug\Edithtour.dll
 D:\ivs_asp.net\EdithTour\Edithtour\Edithtour\obj\Debug\Edithtour.pdb
+D:\ivs_asp.net\EdithTour\Edithtour\Edithtour\bin\EntityFramework.dll
+D:\ivs_asp.net\EdithTour\Edithtour\Edithtour\bin\EntityFramework.SqlServer.dll
+D:\ivs_asp.net\EdithTour\Edithtour\Edithtour\bin\EntityFramework.xml
+D:\ivs_asp.net\EdithTour\Edithtour\Edithtour\bin\EntityFramework.SqlServer.xml
