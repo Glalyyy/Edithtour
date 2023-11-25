@@ -1,0 +1,384 @@
+﻿
+@{
+    ViewBag.Title = "Hotel";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner ">
+        <div class="carousel-item active">
+            <img src="~/Content/Images/Home/Tour/Hotels/pexels-donald-tong-189333.jpg" alt="bg1" style="width:100%">
+        </div>
+        <div class="carousel-item">
+            <img src="~/Content/Images/Home/Tour/Hotels/bg2.jpg" alt="bg2" style="width:100%">
+        </div>
+        <div class="carousel-item">
+            <img src="~/Content/Images/Home/Tour/Hotels/bg3.jpg" alt="bg3" style="width:100%">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+
+</div>
+
+<section class="roberto-about-area section-padding-100-0">
+
+    <div class="hotel-search-form-area">
+        <div class="container-fluid">
+            <div class="hotel-search-form">
+                <form action="#" method="post">
+                    <div class="row justify-content-between align-items-end">
+                        <div class="col-6 col-md-2 col-lg-3">
+                            <label for="checkIn">Check In</label>
+                            <input type="date" class="form-control" id="checkIn" name="checkin-date">
+                        </div>
+                        <div class="col-6 col-md-2 col-lg-3">
+                            <label for="checkOut">Check Out</label>
+                            <input type="date" class="form-control" id="checkOut" name="checkout-date">
+                        </div>
+                        <div class="col-4 col-md-1">
+                            <label for="room">Room</label>
+                            <select name="room" id="room" class="form-control">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                            </select>
+                        </div>
+                        <div class="col-4 col-md-1">
+                            <label for="adults">Adult</label>
+                            <select name="adults" id="adults" class="form-control">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                            </select>
+                        </div>
+                        <div class="col-4 col-md-2 col-lg-1">
+                            <label for="children">Children</label>
+                            <select name="children" id="children" class="form-control">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <button type="submit" class="form-control btn roberto-btn w-100">Check Availability</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div class="container">
+    <h2 class="center">Carousel Example</h2>
+    <div id="myCarousel" class="carousel slide " data-ride="carousel">
+        <!-- Wrapper for slides -->
+
+        <div class="carousel-inner">
+            <!-- scrollamount="5"-->
+            @*<div class="container">*@
+            <div class="row text-center">
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="~/Content/Images/Home/Tour/Hotels/pexels-donald-tong-189333.jpg" target="_blank">
+                            <img src="~/Content/Images/Home/Tour/Hotels/pexels-donald-tong-189333.jpg" alt="Lights Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>THAILAND.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="~/Content/Images/Home/Tour/Hotels/pexels-lisa-fotios-16104977.jpg" target="_blank">
+                            <img src="~/Content/Images/Home/Tour/Hotels/pexels-lisa-fotios-16104977.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>JAPAN</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="~/Content/Images/Home/Tour/Hotels/pexels-asad-photo-maldives-1287460.jpg" target="_blank">
+                            <img src="~/Content/Images/Home/Tour/Hotels/pexels-asad-photo-maldives-1287460.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>KOREA</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="~/Content/Images/Home/Tour/Hotels/pexels-julie-aagaard-2096983.jpg" target="_blank">
+                            <img src="~/Content/Images/Home/Tour/Hotels/pexels-julie-aagaard-2096983.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>CHINA</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="~/Content/Images/Home/Tour/Hotels/pexels-michael-block-3225531.jpg" target="_blank">
+                            <img src="~/Content/Images/Home/Tour/Hotels/pexels-michael-block-3225531.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>MALAYSIA</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="~/Content/Images/Home/Tour/Hotels/pexels-max-bernhardt-15260475.jpg" target="_blank">
+                            <img src="~/Content/Images/Home/Tour/Hotels/pexels-max-bernhardt-15260475.jpg" alt="Lights Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>THAILAND.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="~/Content/Images/Home/Tour/Hotels/pexels-pixabay-261102.jpg" target="_blank">
+                            <img src="~/Content/Images/Home/Tour/Hotels/pexels-pixabay-261102.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>JAPAN</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="~/Content/Images/Home/Tour/Hotels/pexels-pixabay-261388.jpg" target="_blank">
+                            <img src="~/Content/Images/Home/Tour/Hotels/pexels-pixabay-261388.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>KOREA</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="~/Content/Images/Home/Tour/Hotels/pexels-roberto-nickson-2631613.jpg" target="_blank">
+                            <img src="~/Content/Images/Home/Tour/Hotels/pexels-roberto-nickson-2631613.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>CHINA</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="~/Content/Images/Home/Tour/Hotels/pexels-pixabay-53464.jpg" target="_blank">
+                            <img src="~/Content/Images/Home/Tour/Hotels/pexels-pixabay-53464.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>MALAYSIA</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="~/Content/Images/Home/Tour/Hotels/pexels-pixabay-53464.jpg" target="_blank">
+                            <img src="~/Content/Images/Home/Tour/Hotels/pexels-pixabay-53464.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>MALAYSIA</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="~/Content/Images/Home/Tour/Hotels/pexels-pixabay-53464.jpg" target="_blank">
+                            <img src="~/Content/Images/Home/Tour/Hotels/pexels-pixabay-53464.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>MALAYSIA</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*</div>*@
+<div class="container ">
+    <h2 class="text-center" style="margin:1em 0">Accommodation Promotions</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel"></div>
+    <div class="row" style="width:100%">
+        <div class="column-1 margin-left">
+            <img src="~/Content/Images/Home/Tour/Hotels/.png" alt="pt1" style="width:100%">
+        </div>
+        <div class="column-1  margin-left">
+            <img src="~/Content/Images/Home/Tour/Hotels/pexels-thorsten-technoman-338504.jpg" alt="pt2" style="width:100%">
+        </div>
+        <div class="column-1  margin-left">
+            <img src="~/Content/Images/Home/Tour/Hotels/pexels-pixabay-261102.jpg" alt="pt3" style="width:100%">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2 class="text-center" style="margin:1em 0">Flights & Activities Promotions</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <marquee data-target="#myCarousel" width="100%" scrollamount="7.5">
+                <div class="container ">
+                    <div class="row " style="width:100%">
+                        <div class="column-1">
+                            <img src="~/Content/Images/Home/Tour/Hotels/1.png" alt="pt1" style="width:100%">
+                        </div>
+                        <div class="column-1">
+                            <img src="~/Content/Images/Home/Tour/Hotels/2.png" alt="pt2" style="width:100%">
+                        </div>
+                        <div class="column-1">
+                            <img src="~/Content/Images/Home/Tour/Hotels/3.png" alt="pt3" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </marquee>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col-lg-12">
+        <h2 class="text-center " style="margin:1em 0">
+            Featured homes recommended for you
+        </h2>
+    </div>
+    <div class="btn-group center">
+        <button type="button" class="btn default">HaNoi</button>
+        <button type="button" class="btn default">DaLat</button>
+        <button type="button" class="btn default">DaNang</button>
+        <button type="button" class="btn default">VungTau</button>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column-2">
+        <div class="card">
+            <img src="~/Content/Images/Home/Tour/Hotels/ks1.jpg" alt="ks1" style="width:100%">
+            <div class="container">
+                <h2>Melia Vinpearl</h2>
+                <p class="title-1">
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i><hr />
+                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                    <a>Phu Nhuan, Thanh pho Hue, Thua Thien Hue</a>
+                </p>
+                <h2 class="">59$</h2>
+            </div>
+        </div>
+    </div>
+    <div class="column-2">
+        <div class="card">
+            <img src="~/Content/Images/Home/Tour/Hotels/ks2.jpg" alt="ks2" style="width:100%">
+            <div class="container">
+                <h2>VinOasis Hotel</h2>
+                <p class="title-1">
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i><hr />
+                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                    <a>RanH Dau, Phu Quoc, Kien Giang</a>
+                </p>
+                <h2 class="">49$</h2>
+            </div>
+        </div>
+    </div>
+    <div class="column-2">
+        <div class="card">
+            <img src="~/Content/Images/Home/Tour/Hotels/ks3.jpg" alt="ks3" style="width:100%">
+            <div class="container">
+                <h2>Startcity Nha Trang</h2>
+                <p class="title-1">
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i><hr />
+                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                    <a>Loc Tho, Nha Trang, Khanh Hoa</a>
+                </p>
+                <h2 class="">74$</h2>
+            </div>
+        </div>
+    </div>
+    <div class="column-2">
+        <div class="card">
+            <img src="~/Content/Images/Home/Tour/Hotels/ks4.jpg" alt="ks4" style="width:100%">
+            <div class="container">
+                <h2>22Land Residence</h2>
+                <p class="title-1">
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i><hr />
+                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                    <a>Me Tri, Nam Tu Liem, Ha Noi</a>
+                </p>
+                <h2 class="">98$</h2>
+            </div>
+        </div>
+    </div>
+    <div class="column-2">
+        <div class="card">
+            <img src="~/Content/Images/Home/Tour/Hotels/ks5.jpg" alt="ks5" style="width:100%">
+            <div class="container">
+                <h2>Sandals Lily Hotel</h2>
+                <p class="title-1">
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i><hr />
+                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                    <a>Phuong 1, Da Lat city, Lam Dong</a>
+                </p>
+                <h2 class="">67$</h2>
+            </div>
+        </div>
+    </div>
+    <div class="column-2">
+        <div class="card">
+            <img src="~/Content/Images/Home/Tour/Hotels/ks6.jpg" alt="ks6" style="width:100%">
+            <div class="container">
+                <h2>Riverside Hotel</h2>
+                <p class="title-1">
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i><hr />
+                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                    <a>Dong Hai, Dong Hoi, Quang Binh</a>
+                </p>
+                <h2 class="">55$</h2>
+            </div>
+        </div>
+    </div>
+</div>

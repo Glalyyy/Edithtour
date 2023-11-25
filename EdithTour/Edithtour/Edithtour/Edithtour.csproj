@@ -122,6 +122,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HotelController.cs" />
     <Compile Include="Controllers\TourController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -163,6 +164,32 @@
     <Content Include="Content\Images\Home\Slider\thailand.png" />
     <Content Include="Content\Images\Home\thumnaildiscount.png" />
     <Content Include="Content\Images\Home\thumnailtet.png" />
+    <Content Include="Content\Images\Home\Tour\Hotels\1.png" />
+    <Content Include="Content\Images\Home\Tour\Hotels\2.png" />
+    <Content Include="Content\Images\Home\Tour\Hotels\3.png" />
+    <Content Include="Content\Images\Home\Tour\Hotels\5.png" />
+    <Content Include="Content\Images\Home\Tour\Hotels\bg1.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\bg2.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\bg3.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\ks1.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\ks2.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\ks3.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\ks4.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\ks5.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\ks6.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\pexels-asad-photo-maldives-1287460.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\pexels-donald-tong-189333.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\pexels-julie-aagaard-2096983.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\pexels-lisa-fotios-16104977.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\pexels-max-bernhardt-15260475.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\pexels-michael-block-3225531.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\pexels-pixabay-261102.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\pexels-pixabay-261388.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\pexels-pixabay-53464.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\pexels-roberto-nickson-2417842.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\pexels-roberto-nickson-2631613.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\pexels-ron-lach-10397031.jpg" />
+    <Content Include="Content\Images\Home\Tour\Hotels\pexels-thorsten-technoman-338504.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Chùa Linh Phước.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\Chợ Đà Lạt.jpg" />
     <Content Include="Content\Images\Home\Tour\INTSIDE\Cần Thơ - Đà Lạt\coffee.jpg" />
@@ -352,6 +379,7 @@
     <Content Include="Views\Tour\TourInSide.cshtml" />
     <Content Include="Views\Tour\Plane.cshtml" />
     <Content Include="Views\Home\endow.cshtml" />
+    <Content Include="Views\Hotel\Hotel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
