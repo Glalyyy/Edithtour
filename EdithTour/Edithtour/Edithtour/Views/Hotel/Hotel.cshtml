@@ -2,6 +2,8 @@
 @{
     ViewBag.Title = "Hotel";
     Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 }
 
 <div id="demo" class="carousel slide" data-ride="carousel">
@@ -241,9 +243,9 @@
             <marquee data-target="#myCarousel" width="100%" scrollamount="7.5">
                 <div class="container ">
                     <div class="row " style="width:100%">
-                        <div class="column-1">
+                        @*<div class="column-1">
                             <img src="~/Content/Images/Home/Tour/Hotels/1.png" alt="pt1" style="width:100%">
-                        </div>
+                        </div>*@
                         <div class="column-1">
                             <img src="~/Content/Images/Home/Tour/Hotels/2.png" alt="pt2" style="width:100%">
                         </div>
@@ -263,123 +265,525 @@
             Featured homes recommended for you
         </h2>
     </div>
-    <div class="container center">
-        <button type="button" class="btn default">HaNoi</button>
-        <button type="button" class="btn default">DaLat</button>
-        <button type="button" class="btn default">DaNang</button>
-        <button type="button" class="btn default">VungTau</button>
-       
+</div>
+<div class="container center">
+    <button type="button" class="tablink btn default" onclick="openCity('HaNoi', this,'#FDF7E4')" id="defaultOpen" style="">HaNoi</button>
+    <button type="button" class="tablink btn default" onclick="openCity('DaLat', this, '#FDF7E4')">DaLat</button>
+    <button type="button" class="tablink btn default" onclick="openCity('DaNang', this, '#FDF7E4')">DaNang</button>
+    <button type="button" class="tablink btn default" onclick="openCity('VungTau', this, '#FDF7E4')" style="background-color: rgb(253, 247, 228);">VungTau</button>
+</div>
+<div id="HaNoi" class="tabcontent" style="display: none;">
+    <h1>Famous hotels in Hanoi</h1>
+    <div class="row">
+        <div class="column-2">
+            <div class="card">
+                <img src="/Content/Images/Home/Tour/Hotels/ksntHN1.jpg" alt="HN1" style="width:100%">
+                <div class="container">
+                    <h2>InterContinental</h2>
+                    <p class="title-1">
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    </p><hr>
+                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                    <a>5 Tu Hoa street Tay Ho, Ha Noi</a>
+                    <p></p>
+                    <h2 class="">59$</h2>
+                </div>
+            </div>
+        </div>
+        <div class="column-2">
+            <div class="card">
+                <img src="/Content/Images/Home/Tour/Hotels/ksntHN2.jpg" alt="HN2" style="width:100%">
+                <div class="container">
+                    <h2> Apricot Hotel</h2>
+                    <p class="title-1">
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    </p><hr>
+                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                    <a>136 Hang Trong Hoan Kiem, Ha Noi </a>
+                    <p></p>
+                    <h2 class="">49$</h2>
+                </div>
+            </div>
+        </div>
+        <div class="column-2">
+            <div class="card">
+                <img src="/Content/Images/Home/Tour/Hotels/ksntHN3.jpg" alt="HN3" style="width:100%">
+                <div class="container">
+                    <h2>Melia Ha Noi</h2>
+                    <p class="title-1">
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    </p><hr>
+                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                    <a>44 Ly Thuong Kiet Street, Ha Noi </a>
+                    <p></p>
+                    <h2 class="">74$</h2>
+                </div>
+            </div>
+        </div>
+        <div class="column-2">
+            <div class="card">
+                <img src="/Content/Images/Home/Tour/Hotels/ksntHN4.jpg" alt="HN4" style="width:100%">
+                <div class="container">
+                    <h2>Sheraton Ha Noi</h2>
+                    <p class="title-1">
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    </p><hr>
+                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                    <a>11 Xuan Dieu K5 Nghi Tam, Tay Ho, Ha Noi </a>
+                    <p></p>
+                    <h2 class="">74$</h2>
+                </div>
+            </div>
+        </div>
+        <div class="column-2">
+            <div class="card">
+                <img src="/Content/Images/Home/Tour/Hotels/ksntHN5.jpg" alt="HN5" style="width:100%">
+                <div class="container">
+                    <h2>Daewoo Ha Noi</h2>
+                    <p class="title-1">
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    </p><hr>
+                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                    <a>360 Kim Ma Street, Ba Dinh District, Ha Noi </a>
+                    <p></p>
+                    <h2 class="">74$</h2>
+                </div>
+            </div>
+        </div>
+        <div class="column-2">
+            <div class="card">
+                <img src="/Content/Images/Home/Tour/Hotels/ksntHN6.jpg" alt="HN6" style="width:100%">
+                <div class="container">
+                    <h2>Grand Plaza Hanoi </h2>
+                    <p class="title-1">
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    </p><hr>
+                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                    <a>117 Tran Duy Hung Street, Ha Noi </a>
+                    <p></p>
+                    <h2 class="">74$</h2>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<div id="DaLat" class="tabcontent" style="display: none;">
+    <h1>Famous hotels in DaLat</h1>
+    <div class="row">
+        <div class="column-2">
 
-
-<div class="row">
-    <div class="column-2">
+        </div>
+        <div class="column-2">
+            <div class="card">
+                <img src="/Content/Images/Home/Tour/Hotels/ksntDL2.jpg" alt="DL2" style="width:100%">
+                <div class="container">
+                    <h2>ZEN Valley Dalat</h2>
+                    <p class="title-1">
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    </p><hr>
+                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                    <a>38 Khe Sanh - Phuong 10, Da Lat</a>
+                    <p></p>
+                    <h2 class="">49$</h2>
+                </div>
+            </div>
+        </div>
         <div class="card">
-            <img src="~/Content/Images/Home/Tour/Hotels/ks1.jpg" alt="ks1" style="width:100%">
+            <img src="/Content/Images/Home/Tour/Hotels/ksntDL1.jpg" alt="DL1" style="width:100%">
             <div class="container">
-                <h2>Melia Vinpearl</h2>
+                <h2>Mercure Dalat Resort</h2>
                 <p class="title-1">
                     <i class="fa-solid fa-star" style="color: #ff8000;"></i>
                     <i class="fa-solid fa-star" style="color: #ff8000;"></i>
                     <i class="fa-solid fa-star" style="color: #ff8000;"></i>
                     <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i><hr />
-                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
-                    <a>Phu Nhuan, Thanh pho Hue, Thua Thien Hue</a>
-                </p>
+                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                </p><hr>
+                <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                <a>03 Nguyen Du Street Ward 9, Đa Lat </a>
+                <p></p>
                 <h2 class="">59$</h2>
             </div>
         </div>
-    </div>
-    <div class="column-2">
-        <div class="card">
-            <img src="~/Content/Images/Home/Tour/Hotels/ks2.jpg" alt="ks2" style="width:100%">
-            <div class="container">
-                <h2>VinOasis Hotel</h2>
-                <p class="title-1">
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i><hr />
+        <div class="column-2">
+            <div class="card">
+                <img src="/Content/Images/Home/Tour/Hotels/ksntDL3.jpg" alt="DL3" style="width:100%">
+                <div class="container">
+                    <h2>Colline</h2>
+                    <p class="title-1">
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    </p><hr>
                     <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
-                    <a>RanH Dau, Phu Quoc, Kien Giang</a>
-                </p>
-                <h2 class="">49$</h2>
+                    <a>So 10, Phan Boi Chau Phuong 1, Da Lat</a>
+                    <p></p>
+                    <h2 class="">74$</h2>
+                </div>
             </div>
         </div>
     </div>
-    <div class="column-2">
-        <div class="card">
-            <img src="~/Content/Images/Home/Tour/Hotels/ks3.jpg" alt="ks3" style="width:100%">
-            <div class="container">
-                <h2>Startcity Nha Trang</h2>
-                <p class="title-1">
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i><hr />
+
+</div>
+<div id="DaNang" class="tabcontent" style="display: none;">
+    <h1>Famous hotels in Da Nang</h1>
+    <div class="row">
+        <div class="column-2">
+            <div class="card">
+                <img src="/Content/Images/Home/Tour/Hotels/ksntDN1.jpg" alt="DN1" style="width:100%">
+                <div class="container">
+                    <h2>Altara Suites</h2>
+                    <p class="title-1">
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    </p><hr>
                     <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
-                    <a>Loc Tho, Nha Trang, Khanh Hoa</a>
-                </p>
-                <h2 class="">74$</h2>
+                    <a>120 Vo Nguyen Giap, Da Nang</a>
+                    <p></p>
+                    <h2 class="">59$</h2>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="column-2">
-        <div class="card">
-            <img src="~/Content/Images/Home/Tour/Hotels/ks4.jpg" alt="ks4" style="width:100%">
-            <div class="container">
-                <h2>22Land Residence</h2>
-                <p class="title-1">
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i><hr />
+        <div class="column-2">
+            <div class="card">
+                <img src="/Content/Images/Home/Tour/Hotels/ksntDN2.jpg" alt="DN2" style="width:100%">
+                <div class="container">
+                    <h2>DLG Hotel Danang</h2>
+                    <p class="title-1">
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    </p><hr>
                     <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
-                    <a>Me Tri, Nam Tu Liem, Ha Noi</a>
-                </p>
-                <h2 class="">98$</h2>
+                    <a>258 Vo Nguyen Giap Street, Da Nang</a>
+                    <p></p>
+                    <h2 class="">49$</h2>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="column-2">
-        <div class="card">
-            <img src="~/Content/Images/Home/Tour/Hotels/ks5.jpg" alt="ks5" style="width:100%">
-            <div class="container">
-                <h2>Sandals Lily Hotel</h2>
-                <p class="title-1">
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i><hr />
+        <div class="column-2">
+            <div class="card">
+                <img src="/Content/Images/Home/Tour/Hotels/ksntDN4.jpg" alt="DN4" style="width:100%">
+                <div class="container">
+                    <h2>Naman Retreat</h2>
+                    <p class="title-1">
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    </p><hr>
                     <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
-                    <a>Phuong 1, Da Lat city, Lam Dong</a>
-                </p>
-                <h2 class="">67$</h2>
+                    <a>Truong Sa Street,Ngu Hanh Son, Da Nang </a>
+                    <p></p>
+                    <h2 class="">74$</h2>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="column-2">
-        <div class="card">
-            <img src="~/Content/Images/Home/Tour/Hotels/ks6.jpg" alt="ks6" style="width:100%">
-            <div class="container">
-                <h2>Riverside Hotel</h2>
-                <p class="title-1">
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i>
-                    <i class="fa-solid fa-star" style="color: #ff8000;"></i><hr />
+        <div class="column-2">
+            <div class="card">
+                <img src="/Content/Images/Home/Tour/Hotels/ksntDN3.jpg" alt="DN3" style="width:100%">
+                <div class="container">
+                    <h2>The Ocean Villas</h2>
+                    <p class="title-1">
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    </p><hr>
                     <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
-                    <a>Dong Hai, Dong Hoi, Quang Binh</a>
-                </p>
-                <h2 class="">55$</h2>
+                    <a>Truong Sa Street, Da Nang </a>
+                    <p></p>
+                    <h2 class="">74$</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="VungTau" class="tabcontent" style="display: block;">
+    <h1>Famous hotels in VungTau</h1>
+    <div class="row">
+        <div class="column-2">
+            <div class="card">
+                <img src="/Content/Images/Home/Tour/Hotels/ksntVT1.jpg" alt="vt1" style="width:100%">
+                <div class="container">
+                    <h2>Mercure Vung Tau</h2>
+                    <p class="title-1">
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    </p><hr>
+                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                    <a>03-06 Ha Long Street Phuong 2, Vung Tau</a>
+                    <p></p>
+                    <h2 class="">59$</h2>
+                </div>
+            </div>
+        </div>
+        <div class="column-2">
+            <div class="card">
+                <img src="/Content/Images/Home/Tour/Hotels/ksntVT2.jpg" alt="vt2" style="width:100%">
+                <div class="container">
+                    <h2>Beachfront Hotel</h2>
+                    <p class="title-1">
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    </p><hr>
+                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                    <a>30-32 Tran Phu Str, W. 01, Vung Tau</a>
+                    <p></p>
+                    <h2 class="">49$</h2>
+                </div>
+            </div>
+        </div>
+        <div class="column-2">
+            <div class="card">
+                <img src="/Content/Images/Home/Tour/Hotels/ksntVT3.jpg" alt="vt3" style="width:100%">
+                <div class="container">
+                    <h2>Novena</h2>
+                    <p class="title-1">
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff8000;"></i>
+                    </p><hr>
+                    <i class="fa-solid fa-location-dot" style="color: #0026ff;"></i>
+                    <a>302 Phan Chu Trinh PhUOng 2, Vung Tau</a>
+                    <p></p>
+                    <h2 class="">74$</h2>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<div class="container">
+    <h2 class="center">Overheard from travelers</h2>
+    <div id="myCarousel" class="carousel slide " data-ride="carousel">
+        <!-- Wrapper for slides -->
+
+        <div class="carousel-inner">
+            <!-- scrollamount="5"-->
+
+            <div class="row text-center">
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="/Content/Images/Home/Tour/Hotels/avt1.jpg" target="_blank">
+                            <img src="/Content/Images/Home/Tour/Hotels/avt1.jpg" alt="Lights Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>NhaTrang</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="/Content/Images/Home/Tour/Hotels/avt2.jpg" target="_blank">
+                            <img src="/Content/Images/Home/Tour/Hotels/avt2.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>PhuQuoc</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="/Content/Images/Home/Tour/Hotels/avt3.jpg" target="_blank">
+                            <img src="/Content/Images/Home/Tour/Hotels/avt3.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>DaLat</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="/Content/Images/Home/Tour/Hotels/avt4.jpg" target="_blank">
+                            <img src="/Content/Images/Home/Tour/Hotels/avt4.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>VungTau</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="/Content/Images/Home/Tour/Hotels/avt5.jpg" target="_blank">
+                            <img src="/Content/Images/Home/Tour/Hotels/avt5.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>KienGiang</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="/Content/Images/Home/Tour/Hotels/avt6.jpg" target="_blank">
+                            <img src="/Content/Images/Home/Tour/Hotels/avt6.jpg" alt="Lights Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>DaNang</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="/Content/Images/Home/Tour/Hotels/avt7.jpg" target="_blank">
+                            <img src="/Content/Images/Home/Tour/Hotels/avt7.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>SaiGon</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="/Content/Images/Home/Tour/Hotels/avt8.jpg" target="_blank">
+                            <img src="/Content/Images/Home/Tour/Hotels/avt8.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>HaNoi</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="/Content/Images/Home/Tour/Hotels/avt9.jpg" target="_blank">
+                            <img src="/Content/Images/Home/Tour/Hotels/avt9.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>QuangBinh</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="/Content/Images/Home/Tour/Hotels/avt10.jpg" target="_blank">
+                            <img src="/Content/Images/Home/Tour/Hotels/avt10.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>Hue</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="/Content/Images/Home/Tour/Hotels/avt11.jpg" target="_blank">
+                            <img src="/Content/Images/Home/Tour/Hotels/avt11.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>HoiAn</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class=" thu-nghiem-zoom">
+                        <a href="/Content/Images/Home/Tour/Hotels/avt12.jpg" target="_blank">
+                            <img src="/Content/Images/Home/Tour/Hotels/avt12.jpg" alt="Nature Avatar" class="avatar" style="width:100%">
+                            <div class="caption text-center">
+                                <p>AnGiang</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w3-container w3-white">
+    <h1>W3Schools Demo</h1>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-third">
+        <h2>
+            Mercure Dalat Resort
+        </h2>
+        <p>Pull Nguyen</p>
+        <p>
+            The resort is quiet, something I felt first when I arrived. Away from the noisy life and normal work. The resort is very beautiful, with many angles to take photos. The room is very clean, cozy and luxurious. The lobby staff is cheerful and enthusiastic. The food is quite good but the price is a bit high. Will come back when I come to Da Lat.
+        </p>
+    </div>
+
+    <div class="w3-third">
+        <h2>Da Nang</h2>
+        <p>Herry</p>
+        <p>
+            This can be considered a cheap hotel with the best quality in Da Nang. For less than 500 thousand, you will own a room of about 20 square meters, clean and fully equipped with basic amenities.
+        </p>
+    </div>
+
+    <div class="w3-third">
+        <h2>Quang Binh</h2>
+        <p>Happiness</p>
+        <p>
+            It's great to choose Celina as your destination. Everything is perfect from the staff to the quality of service. The garden space is very carefully cared for. There are many backgrounds for guests to take photos. Breakfast food is also great. Will visit next time
+        </p>
+    </div>
+</div>
+<script>
+    function openCity(cityName, elmnt, color) {
+        // Hide all elements with class="tabcontent" by default */
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Remove the background color of all tablinks/buttons
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+
+        // Show the specific tab content
+        document.getElementById(cityName).style.display = "block";
+
+        // Add the specific color to the button used to open the tab content
+        elmnt.style.backgroundColor = color;
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
